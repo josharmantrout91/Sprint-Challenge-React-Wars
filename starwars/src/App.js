@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import CharacterList from './components/CharacterList'
+
 
 
 
@@ -36,10 +38,12 @@ class App extends Component {
   
   // In order to get a list of properties, we need to map over the array of objects and tell our app to return the key: value pairs for each object.  
   render() {
-    console.log(this.state.starwarsChars);
+    console.log(this.state);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharacterList
+         starwarsChars= {this.state.starwarsChars}/>
       </div>
     );
   }
