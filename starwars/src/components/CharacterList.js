@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './StarWars.css';
 import Character from './Character';
 
 const CharacterList = props => {
@@ -7,7 +7,7 @@ const CharacterList = props => {
         <div>
             {props.starwarsChars.map(characterInMap => (
                 <Character 
-                characterOnProps={characterInMap}
+                starWarsChar={characterInMap}
                 />
             ))}   
         </div>

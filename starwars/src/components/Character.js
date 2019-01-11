@@ -1,22 +1,23 @@
 import React from 'react';
+import './StarWars.css';
 
 const Character = props => {
     return(
         <div>            
             <ul>
-                <li>Name: { props.characterOnProps.name } </li>
-                <li>Birth Year: { props.characterOnProps.birth_year }</li>
-                <li>Eye Color: { props.characterOnProps.eye_color }</li>
-                <li>Films: { props.characterOnProps.films }</li>
-                <li>Gender: { props.characterOnProps.gender }</li>
-                <li>Hair Color: { props.characterOnProps.hair_color }</li>
-                <li>Height: { props.characterOnProps.height }</li>
-                <li>Home World: { props.characterOnProps.homeworld }</li>
-                <li>Mass: { props.characterOnProps.mass }</li>
-                <li>Skin Color: { props.characterOnProps.skin_color }</li>
-                <li>Species: { props.characterOnProps.species }</li>
-                <li>Starships: { props.characterOnProps.starships }</li>
-                <li>Vehicles: { props.characterOnProps.vehicles }</li>
+                <li>Name: { props.starWarsChar.name } </li>
+                <li>Birth Year: { props.starWarsChar.birth_year }</li>
+                <li>Eye Color: { props.starWarsChar.eye_color }</li>
+                <li>Gender: { props.starWarsChar.gender }</li>
+                <li>Hair Color: { props.starWarsChar.hair_color }</li>
+                <li>Height: { props.starWarsChar.height }</li>    
+                <li>Mass: { props.starWarsChar.mass }</li>
+                <li>Skin Color: { props.starWarsChar.skin_color }</li>
+                <li>Home World: { props.starWarsChar.homeworld }</li>
+                <li>Species: { props.starWarsChar.species }</li>
+                <li>Films: { props.starWarsChar.films }</li>
+                <li>Starships: { props.starWarsChar.starships }</li>
+                <li>Vehicles: { props.starWarsChar.vehicles }</li>
             </ul>
         </div>
  );
