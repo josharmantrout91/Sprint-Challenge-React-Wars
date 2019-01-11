@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 
+
+
+
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       starwarsChars: []
     };
@@ -29,7 +32,11 @@ class App extends Component {
       });
   };
 
+  // this.state.starwarsChars gives us an array of objects with the key/value pairs of an index position 0-9 and the corresponding object. Each object also includes within it a mix of strings and arrays.
+  
+  // In order to get a list of properties, we need to map over the array of objects and tell our app to return the key: value pairs for each object.  
   render() {
+    console.log(this.state.starwarsChars);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
