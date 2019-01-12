@@ -13,8 +13,10 @@ const Character = props => {
                 <li>Height: { props.starWarsChar.height }</li>    
                 <li>Mass: { props.starWarsChar.mass }</li>
                 <li>Skin Color: { props.starWarsChar.skin_color }</li>
+                {/* Home World and Species not correctly displaying data pulled from API. Unsure how to correctly troubleshoot */}
                 <li>Home World: { props.starWarsChar.homeworld }</li>
                 <li>Species: { props.starWarsChar.species }</li>
+                {/* Each of the objects films, starships, and vehicles is an array, and I am unsure how to apply the .map method to them to get the data to display correctly */}
                 <li>Films: { props.starWarsChar.films }</li>
                 <li>Starships: { props.starWarsChar.starships }</li>
                 <li>Vehicles: { props.starWarsChar.vehicles }</li>
